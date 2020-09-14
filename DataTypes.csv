@@ -1,6 +1,0 @@
-action;rowDiscriminator;macroTypeAlias;placement;indexScope;indexIsUnic;macroTypeFolder;childrenConstraint;macroTypeName;contextParentAlias;super;order;groupKind;groupAlias;groupName;parentGroupAlias;propertyGroupAlias;propertyAlias;propertyShortName;propertyHint;propertyPlaceHolder;propertyHelp;propertyName;propertyType;propertyDisplayStringFormat;isMinIncluded;min;max;isMaxIncluded;measUnitCode;decimalPprecision;decimalScale;fkAlias;fkSourceConfig;isHidden;isRequired;isReadOnly;isHistorical;bevahiourScript;macroTypeCsharpPreProcessingScript;macroTypeCsharpValidationScript;macroTypePreProcessingScript;macroTypeValidationScript
-cru;ref;standard_solutions;Global;;;ek_standard_solutions;;Типовые решения;;lto;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-cru;ref;interphase_dist;Global;;;ek_internal;;Межфазные расстояния;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-cru;;;;;;;;;;;1000;;;;;;standard_solutions_fk;;;;;Типовое решение;fk [cascade];;;;;;;;;standard_solutions;;true;;;;;;;;
-cru;;;;;;;;;;;1200;;;;;;diam_range;;;;;Диапазон диаметров кабеля;fk [noaction];;;;;;;;;d_cable_diameters;;;;;;;;;;
-cru;;;;;;;;;;;1300;;;;;;interphase_distance;;;;;Межфазное расстояние;integer;;[;0;10000;];mm;;;;;;;;;;;;;
