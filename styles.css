@@ -18,6 +18,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 130px;
 }
 
 .logo, .menu {
@@ -60,47 +61,85 @@ a {
 }
 
 .menu__item {
-
-    padding: 0 13px;
+    color:#000;
+    margin-right: 24px;
+    position: relative;
 }
 
-.menu__item:last-child {
-    padding-right: 0;
+.menu__item::after{
+    position: absolute;
+    left:0;
+    display: block;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0056ec;
+    opacity: 0;
+    transition: opacity .5s, width .5s;
+}
+
+.menu__item:hover {
+    opacity: .5;
+}
+
+.menu__item:hover::after, .menu__item_active::after {
+    opacity: 1;
+    width: 100%;
+}
+
+/* .menu__item:last-child {
+    margin-right: 0;
+} */
+
+.menu__item_active::after{
+    position: absolute;
+    left:0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #0056ec;  
 }
 
 .menu {
     font-family: 'Roboto', sans-serif;
 }
 
-.main-content__title {
+.main__title {
     font-family: 'PT Serif', serif;
     font-weight: bold;
     font-size: 66px;
     line-height: 87px;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
+    padding-top: 75px;
 }
 
-.main-content__text {
+.main__text {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     line-height: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    padding-right: 15%;
 }
 
-.main-content__button {
+.main__button {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 21px;
-    padding: 18px 20px;
+    padding: 18px 28px;
     background: #0056EC;
     border-radius: 4px;
     color: #FFFFFF;
     border-color: #0056EC;
+    transition: opacity .5s;
+}
+
+.main__button:hover{
+    opacity: .5;
+    cursor: pointer;
 }
 
 .main-section {
-    /* border: dashed 1px red; */
-    /* height: 100vh; */
     height: 600px;
     margin-top: 132px;
     display: flex;
@@ -108,11 +147,13 @@ a {
     align-items: center;
 }
 
-.main-content {
-    width: 35%;
+.main {
+    padding: 0 63% 120px 0;
+    background: top right no-repeat url(./img/main.svg);
+    min-height: 540px;
 }
 
-.main-content__title_colored {
+.main__title_colored {
     background: #ECF3FF;
 }
 
@@ -120,4 +161,23 @@ a {
     /* border: dashed 1px red; */
     width: 770px;
     height: 657px;
+}
+
+
+
+
+
+
+@media (min-width: 1170px) {
+
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .header {
+        margin-bottom: 28px;
+    }
+    .main
 }
