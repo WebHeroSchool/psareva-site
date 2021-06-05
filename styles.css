@@ -18,7 +18,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 
 .logo, .menu {
@@ -111,6 +111,7 @@ a {
     font-size: 66px;
     line-height: 87px;
     margin-bottom: 40px;
+    padding-top: 75px;
 }
 
 .main__text {
